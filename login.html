@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ionsphere-loginc</title>   
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>    
+</head>
+    <body>
+        <!-- Debut navbar-->
+        <header class="entete">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid px-5">
+                    <a href="index.html"><img class="nav-img" src="images/Logo.jpg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">ACCEUIL</a>
+                          </li>                      
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            NOS SERVICES</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Livraison express</a></li>
+                              <li><a class="dropdown-item" href="#">Transport international</a></li>
+                              <li><a class="dropdown-item" href="#">Suivi de colis</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="login.html">CONNEXION</a>
+                          </li>
+                          <li class="nav-item"></li>
+                            <a class="nav-link" href="signup.html">INSCRIPTION</a>
+                          </li>
+                        </ul>                        
+                      </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Fin navbar -->
+
+        <!-- Debut page connexion  -->
+         
+        <div class="page-content">
+            <div class="form-v9-content" style="background-color: rgb(34, 33, 33);">
+                <form class="form-detail" action="#" method="post">
+                    <h2>Connectez-vous</h2>
+                    <div class="form-row-total">
+                        <div class="form-row">
+                            <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Votre Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="comfirm-password" id="comfirm-password" class="input-text" placeholder="Votre mot de passe" required>
+                        </div>
+                    </div>                   
+                    <div class="form-row-last">
+                        <input type="submit" name="register" class="register" value="Connexion">                        
+                        <p>Vous n'aviez pas de compte <a href="signup.html">Inscrivez-vous</a> ou <a href="#">Mot de passe oubliez</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Fin page connexion  -->
+    </body>
+</html>

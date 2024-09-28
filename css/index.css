@@ -1,0 +1,174 @@
+
+/* Logo  */
+.nav-img {
+	width: 100px;
+	height: 50px;
+}
+
+.about_section .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .about_section .img-box {
+    position: relative;
+  }
+  
+  .about_section .img-box img {
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about_section .img-box::before, .about_section .img-box::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 70%;
+    background-color: #04233b;
+    z-index: 3;
+  }
+  
+  .about_section .img-box::before {
+    left: 0;
+    z-index: 1;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .about_section .img-box::after {
+    right: 0;
+    z-index: 1;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+  
+  .about_section .detail-box p {
+    color: #1f1f1f;
+    margin-top: 15px;
+  }
+  
+  .about_section .detail-box a {
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: #5a93fc;
+    color: #ffffff;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+    margin-top: 15px;
+  }
+  
+  .about_section .detail-box a:hover {
+    background-color: #2050d3;
+  }
+
+  .card-img-top {
+    width: 100px;
+    height: 200px;
+    border-radius: 5px;
+  }
+
+  /* Debut section nous conctactez */
+
+  .track_section {
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .track_section .track_bg_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .track_section .track_bg_box img {
+    width: 100%;
+    height:100%;
+    
+  }
+  
+  .track_section .track_bg_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(37, 37, 37, 0.95)), to(rgba(37, 37, 37, 0.55)));
+    background: linear-gradient(to right, rgba(37, 37, 37, 0.95), rgba(37, 37, 37, 0.55));
+  }
+  
+  .track_section p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .track_section form {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  
+  .track_section form input {
+    background-color: #ffffff;
+    border: none;
+    -webkit-box-flex: 2.5;
+        -ms-flex: 2.5;
+            flex: 2.5;
+    outline: none;
+    color: #000000;
+    min-height: 42.4px;
+    padding-left: 15px;
+  }
+  
+  .track_section form input ::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+  
+  .track_section form input :-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+  
+  .track_section form input ::-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+  
+  .track_section form input ::placeholder {
+    color: #ffffff;
+    opacity: 0.2;
+  }
+  
+  .track_section form button {    
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #1562c7;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+  
+  .track_section form button:hover {
+    background-color: #0e2e85;
+  }
+
+  .container {
+    padding-top: 50px;
+  }
+  /* Fin section nous contactez */
